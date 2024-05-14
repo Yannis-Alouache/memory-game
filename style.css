@@ -1,5 +1,21 @@
 * {
-    font-family: 'Annie Use Your Telescope', handwriting;
+  font-family: 'Annie Use Your Telescope', handwriting;
+}
+
+body {
+  background-color: #2E202C;
+}
+
+.light body {
+  background-color: white;
+}
+
+.main-title, .score {
+  color: white;
+}
+
+.light .main-title, .light .score {
+  color: black;
 }
 
 .flip-card {
@@ -7,6 +23,7 @@
     width: 190px;
     height: 254px;
     perspective: 1000px;
+    cursor: pointer;
     font-family: sans-serif;
   }
   
@@ -67,4 +84,13 @@
     background: #6200B3;
     color: white;
     transform: rotateY(180deg);
+  }
+
+  input:checked + label .dot {
+    transform: translateX(100%);
+    background-color: #b0b0b0;
+  }
+
+  label .dot {
+    transition: transform 0.3s ease-in-out;
   }

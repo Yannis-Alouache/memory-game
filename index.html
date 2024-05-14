@@ -9,10 +9,19 @@
     <link rel="stylesheet" href="./style.css">
     <title>Memory Game</title>
 </head>
-<body class="bg-[#2E202C]">
+<body>
     <main>
-        <h1 class="text-5xl text-white text-center mt-10 mb-5">Memory Game</h1>
-        <h1 class="text-5xl text-white text-center">Score : <span id="score">0</span></h1>
+        <div class="ml-3 mt-2">
+            <input id="mode-toggle" type="checkbox" class="hidden" />
+            <label for="mode-toggle" class="cursor-pointer">
+                <div class="relative">
+                <div class="block bg-gray-200 w-14 h-8 rounded-full"></div>
+                <div class="dot absolute left-1 top-1 bg-black w-6 h-6 rounded-full transition"></div>
+                </div>
+            </label>
+        </div>
+        <h1 class="text-5xl text-center mt-10 mb-5 main-title">Memory Game</h1>
+        <h1 class="text-5xl text-center score">Score : <span id="score">0</span></h1>
         <div class="max-w-5xl mx-auto">
             <div class="grid grid-cols-5 gap-4 mt-24">
 
